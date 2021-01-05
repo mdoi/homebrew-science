@@ -10,7 +10,7 @@ class Jmol < Formula
     depends_on "ant" => :build
   end
 
-  depends_on :java
+  depends_on "openjdk"
 
   def install
     system "ant" if build.head?
